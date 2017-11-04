@@ -1,0 +1,121 @@
+﻿
+<!-- contact-page -->
+<div class="contact">
+	<div class="container">
+		<div class="contact-page">
+			<div class="contact-info">
+				<h3>CONTACT US</h3>
+			</div>
+            <!--https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819-->
+			<div class="contact-map">
+                <iframe width="600"
+                        height="450"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrMnCDbKIlCEVLSTLvf-iCEeJo4Dq9uPg
+                                &q=564+Kwa-Xuma+Link,+Jabulani,+Soweto,+1868" allowfullscreen></iframe>
+                        </div>
+			<div class="contact-form">
+				<form>
+						<input type="text" id="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="email" id="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="tel" id="cell" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+						<textarea id="msg" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message</textarea>
+						<button class="btn1" id="send">Send</button>
+				</form>
+                <p id="output"></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$("#send").click(function(){
+
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var cell = $("#cell").val();
+		var msg= $("#msg").val();
+		if(name == ""){
+			AlertError("Please Enter your name");
+		}
+		else if(email == ""){
+			AlertError("Please Enter your email address");
+		}
+		else if(!(email.includes("@"))){
+			AlertError("Please Enter valid email address");
+		}
+		else if(cell == ""){
+			AlertError("Please Enter your cell phone numer");
+		}
+		else if(msg == ""){
+			AlertError("Please Enter your  message");
+		}else{
+
+
+			AlertError("Thank you! Your message has been successfully sent. We will contact you very soon!");
+			$.post("email.php",
+    {
+        name: "Name :" + name + "  Cell : " + cell + " Email : " + email ,
+				msg : msg, email : email
+    },
+    function(data, status){
+        AlertError("Thank you! Your message has been successfully sent. We will contact you very soon!");
+    });
+
+	}
+	});
+	function AlertError(err){
+
+}
+
+</script>	
+<!-- //contact-page -->
+<!-- news-bottom -->
+<div class="news-bottom">
+	<div class="container">	
+		<div class="news-pad">
+			<div class="row news-bot">
+				<div class="col-md-3 news-grid">
+					<h3>Pages</h3>
+					<ul>
+						<li><a href="#">Suspendisse Vulputate </a></li>
+						<li><a href="#">Fringilla Arcu et Porttitor</a></li>
+						<li><a href="#">Mauris Placerat Mattis </a></li> 
+						<li><a href="#">Tellus id Sodales </a></li>
+						<li><a href="#">Magnust Qisit</a></li>
+					</ul>		  
+				</div>
+				<div class="col-md-3 news-grid">
+					<h3>Main Menu</h3>
+					<ul>
+						<li><a href="#">Suspendisse Vulputate </a></li>
+						<li><a href="#">Fringilla Arcu et Porttitor</a></li>
+						<li><a href="#">Mauris Placerat Mattis </a></li> 
+						<li><a href="#">Tellus id Sodales </a></li>
+						<li><a href="#">Magnust Qisit</a></li>
+					</ul>							  
+				</div>
+				<div class="col-md-3 news-grid">
+					<h3>Latest News & Events</h3>
+					<ul>
+						<li><a href="#">Suspendisse Vulputate </a></li>
+						<li><a href="#">Fringilla Arcu et Porttitor</a></li>
+						<li><a href="#">Mauris Placerat Mattis </a></li> 
+						<li><a href="#">Tellus id Sodales </a></li>
+						<li><a href="#">Magnust Qisit</a></li>
+					</ul>							  
+				</div>
+				<div class="col-md-3 news-grid">
+					<h3>Blog Posts</h3>
+					<ul>
+						<li><a href="#">Suspendisse Vulputate </a></li>
+						<li><a href="#">Fringilla Arcu et Porttitor</a></li>
+						<li><a href="#">Mauris Placerat Mattis </a></li> 
+						<li><a href="#">Tellus id Sodales </a></li>
+						<li><a href="#">Magnust Qisit</a></li>
+					</ul>							  
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

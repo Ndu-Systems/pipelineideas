@@ -1,0 +1,64 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+	<title>Pipeline Ideas</title>
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+			<link href="css/bootstrap.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Wilcox Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!-- //for-mobile-apps -->	
+    <script src="js/jquery.min.js"></script>
+ 
+    <!--Angular File-->
+    <script src="angularjs/config.js"></script>  
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="angularjs/app.js"></script>
+    <script src="controllers/homeController.js"></script>
+    <script src="routes/routes.js"></script>
+    <!--/Angular ends-->
+    <!-- js -->
+   
+    <!--/javascript bl-->
+
+</head>
+<body>
+<!-- header -->
+    <div ng-include="'pages/home/head.html'"></div>
+    <!-- //header -->
+    <!-- navigation -->
+    <div class="navigation">
+        <div class="container">
+            <div ng-include="'pages/home/nav.html'"></div>
+        </div>
+    </div>
+<ng-view></ng-view>
+<!-- //news-bottom -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<p>Copyright &copy; 2015 Wilcox. Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
+	</div>
+</div>
+<!-- footer -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+		 <script src="js/bootstrap.js"></script>
+</body>
+</html>
