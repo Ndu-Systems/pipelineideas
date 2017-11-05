@@ -16,7 +16,11 @@
         templateUrl: 'pages/home/gallery.html',
         controller: 'homeController'
     })
-    .when('/contactus', {
+        .when('/services', {
+            templateUrl: 'pages/home/services.html',
+            controller: 'homeController'
+        })
+    .when('/contact', {
         templateUrl: 'pages/home/contact.html',
         controller: 'homeController'
     });
