@@ -4,10 +4,10 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	margin:0;
 	padding:0;
-	background:#fff;
+	background:#ecf0f1;
  }
 body a{
 	transition:0.5s all;
@@ -16,14 +16,13 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.thumbnail{
-	height:300px;
-}
+
 .thumbnail h2{
-	text-transform: uppercase;
+	text-transform: capitalize;
 	background: rgba(191, 116, 4, 1);
 	color: white;
 	padding:2%;
+	font:normal normal normal 20px/1.3em helvetica-w01-light,helvetica-w02-light,sans-serif
 }
 .thumbnail  a:hover {
 	text-decoration: none;
