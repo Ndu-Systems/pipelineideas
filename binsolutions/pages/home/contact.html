@@ -1,32 +1,44 @@
 ﻿
-<!-- contact-page -->
-<div class="contact">
-	<div class="container">
-        <div class="ser-info">
-            <h2>CONTACT US</h2>
-        </div>
-		<div class="contact-page">			 
-            <!--https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819-->
-			<div class="contact-map">
-                <iframe width="600"
-                        height="450"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrMnCDbKIlCEVLSTLvf-iCEeJo4Dq9uPg
-                                &q=564+Kwa-Xuma+Link,+Jabulani,+Soweto,+1868" allowfullscreen></iframe>
-                        </div>
-			<div class="contact-form">
-				<form>
-						<input type="text" id="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-						<input type="email" id="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-						<input type="tel" id="cell" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
-						<textarea id="msg" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message</textarea>
-						<button class="btn1" id="send">Send</button>
-				</form>
-                <p id="output"></p>
-			</div>
+<!-- //navigation -->
+<!-- about-page -->
+<div class="about-page">
+		<div class="container" style="padding-top:5%"> 
+			<h1 style="color:white;padding:2%">Contact Us</h1> 
+				  <div class="">
+						<div class="col-sm-6">
+								<div class="panel panel-default">
+										<div class="panel-body">
+											Tel : 0114545466 <br>
+											Email: info@pipelineideas.co.za
+										</div>
+									  </div>
+								<div class="contact-map">
+										<iframe width="600"
+												height="450"
+												frameborder="0" style="border:0"
+												src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrMnCDbKIlCEVLSTLvf-iCEeJo4Dq9uPg
+														&q=564+Kwa-Xuma+Link,+Jabulani,+Soweto,+1868" allowfullscreen></iframe>
+												</div>	</div>
+						<div class="col-sm-6 about-info">
+								<div class="contact-form">
+										<form>
+												<input type="text" id="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+												<input type="email" id="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+												<input type="tel" id="cell" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+												<textarea id="msg" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message</textarea>
+												<button class="btn1" id="send">Send</button>
+										</form>
+										<p id="output"></p>
+									</div>
+					</div>
+					
+				
+			
+		</div>
 		</div>
 	</div>
-</div>
+	<!-- //about-page -->
+
 
 <script>
 	$("#send").click(function(){

@@ -7,7 +7,18 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	margin:0;
 	padding:0;
-	background:#ecf0f1;
+	
+	 /* The image used */
+	 background-image: url('../images/bg.jpg');
+	 
+			 /* Full height */
+			 height: 100%; 
+	 
+			 /* Create the parallax scrolling effect */
+			 background-attachment: fixed;
+			 background-position: center;
+			 background-repeat: no-repeat;
+			 background-size: cover;
  }
 body a{
 	transition:0.5s all;
@@ -731,7 +742,7 @@ height:300px;
 }
 .contact-form input[type="text"] {
 	border: 1px solid #a8a8a8;
-	width: 31.65%;
+	width: 100%;
 	outline: none;
 	padding: 10px;
 	font-size: 14px;
@@ -741,7 +752,7 @@ height:300px;
 }
 .contact-form input[type="email"] {
 	border: 1px solid #a8a8a8;
-	width: 31.65%;
+	width: 100%;
 	outline: none;
 	padding: 10px;
 	font-size: 14px;
@@ -751,7 +762,7 @@ height:300px;
 }
 .contact-form input[type="tel"] {
 	border: 1px solid #a8a8a8;
-	width: 29%;
+	width: 100%;
 	outline: none;
 	padding: 10px;
 	font-size: 14px;
@@ -810,7 +821,8 @@ margin:0 0 50px 0;
   padding:50px 0;
   border: 15px solid #fff;
   box-shadow: 4px 0px 15px 4px #E6E6e6;
-  border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(0, 0, 0, 0.36)
 }
 .about-pad{
 padding:0 !important;
@@ -821,18 +833,23 @@ padding-left:0;
 .about-left img{
 width:100%;
 }
+.about-info{
+	background: rgba(0, 0, 0, 0.39);
+	margin-top: -220px;
+	padding-top: 20%;
+}
 .about-info h3{
  margin: 0 0 25px 0;
   font-size: 26px;
-  text-align:center;
+  text-align:left;
   font-weight: 700;
-  color: #0a0a0a;
+  color:white;
 }
 .about-info p{
   margin: 0 auto 45px auto;
   font-size: 18px;
   line-height: 1.8em;
-  color: #5f5d5d;
+  color:white;
   width: 75%;
   text-align: left;
 }
@@ -909,9 +926,7 @@ font-weight: 600;
 /*--services-page--*/
 .services-bor{
   padding:50px 0;
-  border: 15px solid #fff;
-  box-shadow: 4px 0px 15px 4px #E6E6e6;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .ser-info h3{
