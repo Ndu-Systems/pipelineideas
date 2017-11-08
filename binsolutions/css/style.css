@@ -9,12 +9,92 @@ body{
 	padding:0;
 	background:#fff;
  }
+ footer {
+    background: black;
+    padding: 1%;
+    color: olive;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 5%;
+  
+}
+.carousel-inner{
+	height:400px;
+}
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
+}
+.about-us{
+	 /* The image used */
+    background-image: url("../images/about.jpeg");
+
+    /* Set a specific height */
+    height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding-bottom:5%;
+}
+nav li{
+	background:#804c04;
+	
+	
+}
+
+nav li a{
+	color:white;
+	padding:3% !important;
+}
+.about-us section{
+	background:rgba(0,0,0,0.72);
+	padding:3%;
+	margin:3%;
+}
+.about-us h1{
+	padding:2%;
+	width:100%;
+	text-align:center;
+	font-family: 'Franklin Gothic Heavy';
+	color:olive;
+}
+.about-us p {
+	color:white;
+	padding:2%;
+	font-size:20px;
+}
+.logo p{
+	text-transform:lowercase;
+}
+.logo a {
+	text-decoration:none;
+	color: olive;
+}
+.thumbnail{
+		border-radius:0;
+	}
+.thumbnail h2{
+	text-transform: capitalize;
+	background: #808000;
+	color: white;
+	padding:3%;
+	font:normal normal normal 20px/1.3em helvetica-w01-light,helvetica-w02-light,sans-serif;
+	margin:0;
+	
+}
+.thumbnail h2:hover{
+	background:rgba(191, 116, 4, 1);
+}
+.thumbnail  a:hover {
+	text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;			   
@@ -70,13 +150,13 @@ padding:0;
 }
 .navbar-default .navbar-nav > li > a{
 background:none;
-color:#1f201d;
+color:white;
 font-size:18px;
 font-weight:600;
   border-right: 1px solid #dedddd;
 }
 .nav > li > a {
-  padding: 3px 15px !important;
+  padding: 18px 15px !important;
 }
 .navbar-nav {
   float: left;
@@ -92,8 +172,11 @@ font-weight:600;
   background: none;
 }
 .navbar-default .navbar-collapse{
-  border-color: #fbfbfb;
-  box-shadow: 4px 0px 15px 4px #E6E6e6;
+  border-bottom:3px solid #804c04;
+  background:white;
+}
+.navbar-default{
+	border:none;
 }
 .social-icons{
 float:right;
@@ -142,7 +225,7 @@ margin-right: 5px;
   padding: 20px 0;
 }
 .banner{
-background:#da4a06;
+background:#ecf0f1;
 }
 
 .banner-info{
@@ -424,6 +507,8 @@ ul.social-slide li i.mac{
   .callbacks_nav {
     top: 47%;
     }
+	.carousel-inner{
+	height:auto;
 }
 
 .callbacks_tabs a{
